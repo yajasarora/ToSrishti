@@ -1,2 +1,2 @@
-# Subu
-This is for Subina
+# Srishti
+This is for Srishti
