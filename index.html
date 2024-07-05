@@ -12,14 +12,20 @@
 </head>
 
 <body>
-      <audio src="music/srishti.ogg" id="my_audio" loop="loop"></audio>
+      <audio src="music/srishti.mp3" id="my_audio" loop="loop"></audio>
       <script type="text/javascript">
           window.addEventListener("DOMContentLoaded", event => {
-        const audio = document.querySelector("audio");
+    console.log("DOMContentLoaded event fired");
+    const audio = document.querySelector("audio");
+    if (audio) {
         audio.volume = 0.2;
-        audio.play();
-      
+        audio.play().catch(error => {
+            console.error('Error playing audio:', error);
         });
+    } else {
+        console.error('Audio element not found');
+    }
+});
       </script>
 
   <div class="container">
