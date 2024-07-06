@@ -14,16 +14,13 @@
 <body>
   <audio src="music/srishti.mp3" controls="controls" id="my_audio" loop="loop"></audio>
   <script type="text/javascript">
-    window.addEventListener('load', event => {
-      const audio = document.querySelector("audio");
-      if (audio) {
-        audio.volume = 0.2;
-        audio.play();
-      } else {
-        console.error('Audio element not found.');
-      }
-    });
-  </script>
+    window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.8;
+  audio.play();
+
+  });
+</script>
   
 
   <div class="container">
